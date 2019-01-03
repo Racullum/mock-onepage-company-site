@@ -1,0 +1,293 @@
+body, html {
+    background: black !important;
+    min-width: 100%;
+    
+   
+    padding: 0;
+    
+    height: 100%;
+  }
+
+  img {
+      border: solid purple;
+      max-height: 70vh;
+      z-index: 1;
+      text-align: right;
+      float: center;
+
+  }
+
+  #fullpage {
+    color: white;
+  }
+
+  #fp-nav ul li a span{
+    background: white !important;
+  }
+  
+  .section {
+    color: white;
+    padding: 0;
+    margin: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 0;
+    transition: all .7s ease-in-out;
+  }
+
+  
+
+  .section.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    color: white;
+  }
+  
+  .about {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .about-image {
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    padding-top: 15%;
+    
+    justify-content: center;
+    background: black;
+    
+ 
+
+  }
+
+  .about-image img:hover {
+    opacity: .3;
+  }
+  
+  .row {
+    padding: 0;
+    margin: 0;
+  }
+
+  .even-col {
+ 
+    padding-right: 10em;
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .even-col p {
+    
+    position: relative;
+    padding-left: 1em;
+  }
+
+  .even-col h1 {
+
+      font-size: 10rem;  
+      position: relative;
+      margin-top: 25vh; 
+  }
+  
+  .odd-col {
+    
+    padding-left: 10em;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .odd-col p {
+    position: relative;
+    padding-right: 1em;
+ 
+  }
+
+  .odd-col h1 {
+      
+      font-size: 10rem;  
+      position: relative;
+      margin-top: 25vh;
+
+  }
+  
+  .header {
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: relative;
+  
+    width: 100%;
+    height: 100vh;
+    color: white;
+ 
+    text-align: center;
+    overflow: hidden;
+
+    
+
+  }
+
+
+
+  .header h1 {
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    
+    z-index: 2;
+     
+
+
+  }
+
+  .video-container {
+      position: absolute;
+    
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      
+  }
+
+  .color-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: black;
+      width: 100%;
+      height: 100vh;
+      opacity: .7;
+      z-index: 1;
+  }
+
+  .video-container video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    object-fit: fill; 
+    
+  }
+
+  .sidebar {
+   
+    font-size: 1rem;
+    font-weight: 100;
+    height: auto;
+    top: 10%;
+    background-color: rgba(192, 20, 20, 0);
+    position: fixed;
+    text-align: center;
+    overflow-x: hidden;
+    z-index: 1;
+    
+  }
+
+
+  .flex-container {
+    display: flex;
+   
+    z-index: 1;
+    width: 5%;
+    position: fixed;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  /* Sidebar links */
+.sidebar a {
+
+  display: block;
+  color: white;
+  padding-top: 50px;
+ 
+  padding-bottom: 50px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.arrow-icon {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  position: absolute;
+  
+  color: white;
+  padding: 10px;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translate3d(-50%,-50%,0);
+  -ms-transform: translate3d(-50%,-50%,0);
+  transform: translate3d(-50%,-50%,0);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  z-index: 2;
+
+
+}
+
+
+
+.team-images {
+
+
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+
+
+.team-images img{
+  padding-right: 5vw;
+  padding-left: 5vw;
+  border-radius: 50%;
+  height: 15vh !important;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 3rem;
+  
+}
+
+.icon-container a {
+  color: inherit;
+}
+
+.icon-container a:hover {
+  color: inherit;
+  font-size: 4rem;
+}
+
+.icon-container i {
+  padding-left: 1rem;
+  padding-right: 1rem;
+ 
+}
